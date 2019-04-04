@@ -8,7 +8,7 @@ Mcity-api uses a number of open source projects to work properly:
 
 * [Vue.js] - Used for our dashboard front end.
 * [S3] - Storage of redirect objects
-* [Cloudfront] - Hosting https verisons of creation app.
+* [Cloudfront] - Hosting https versions of creation app.
 
 ## Installation
 ### Setup S3
@@ -29,8 +29,8 @@ $ npm run build
 
 Copy files from Dist folder to S3 bucket
 
-Invalidate cloudfront cache
+Invalidate Cloud front cache
 
 ### Development
 
-This application is maintaineed by Tyler Worman (tworman@umich.edu) if you'd like to contribute, please create a pull request for features/fixes on this repository.
+This application is maintained by Tyler Worman (tworman@umich.edu) if you'd like to contribute, please create a pull request for features/fixes on this repository.
