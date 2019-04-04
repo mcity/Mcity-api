@@ -71,6 +71,27 @@
       </v-card-actions>
     </v-card>
 
+    <p></p>
+    <v-card>
+      <v-card-title class="headline primary white--text">
+        Members - Documentation and Publication
+      </v-card-title>
+      <v-card-text class="text-xs-left">
+        <p>
+          Mcity Members provides wiki like services supporting rendering of Markdown on the frontend.
+          Webservices allow for search, CRUD operations, and retrieval with permissions enforced by role.
+        </p>
+        <p>
+          Click "Try It" to access documentation and a working implementation of the API.
+          Contact mcity-engineering@umich.edu for a valid client_id.
+        </p>
+      </v-card-text>
+      <v-card-actions>
+            <v-btn flat color="arbblue" href="https://members.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn flat color="arbblue" href="https://members.um.city" target="_blank">Production</v-btn>
+      </v-card-actions>
+    </v-card>
+
    <p></p>
     <v-card>
       <v-card-title class="headline primary white--text">
@@ -113,7 +134,6 @@
             <v-btn flat color="arbblue" href="https://garage.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
-
 
     <p></p>
     <v-card>
