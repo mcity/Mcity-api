@@ -14,7 +14,12 @@
           Use developer API key "reticulatingsplines" to work within the test environment.
         </p>
         <p>
-          Mcity runs two environmemnts with implementations of OCTANE.
+          Click "Skyline" for access to a sample application that uses the production OCTANE instance.
+          Skyline provides a web UI on top of the OCTANE API and enables point and click control and 
+          enumeration of the test facility.
+        </p>
+        <p>
+          The Mcity Test Facility has two environmemnts with implementations of OCTANE.
           Production API keys are included with your reservation reminder.
           Production API keys are active only during your reservation time period.
         </p>
@@ -27,6 +32,40 @@
             <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
             <v-btn flat color="arbblue" href="https://mvillage.um.city" target="_blank">Test Instance</v-btn>
             <v-btn flat color="arbblue" href="https://mcity.um.city" target="_blank">Prod Instance</v-btn>
+            <v-btn flat color="arbblue" href="https://skyline.um.city" target="_blank">Skyline</v-btn>
+      </v-card-actions>
+    </v-card>
+    <p></p>
+    <v-card>
+      <v-card-title class="headline primary white--text">
+        OCTANE - Ann Arbor Connected Vehicle Test Enviornment (AACVTE)
+      </v-card-title>
+      <v-card-text class="text-xs-left">
+        <p>
+          Ann Arbor Connected Vehicle Test Environment limited implementation of the OCTANE API.
+          This API enables query/enumeration of environment and Socket.IO websockets for real time data feeds.
+          Mcity provides an implementation of Skyline, a web user interface for real time view of AACVTE.
+        </p>
+        <p>
+          OCTANE is a rest API with push messages through Socket.IO websockets. Skyline is an interactive GUI
+          built to run on OCTANE APIs and enable easy interaction with the API.
+        </p>
+        <p>
+          Click "Try It" to access documentation and a working implementation of the API.
+        </p>
+        <p>
+          The AACVTE OCTANE environment is accessible only to Leadership Circle companies and 
+          researchers with the University of Michigan. To utilize the API directly to develop applications,
+          contact mcity-engineering@umich.edu to request an application ID.
+        </p>
+        <p>
+          You can contribute to the OCTANE standard through our GitHub Repository.
+        </p>
+      </v-card-text>
+      <v-card-actions>
+            <v-btn flat color="arbblue" href="https://aacvte.octane.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
+            <v-btn flat color="arbblue" href="https://aacvte.um.city" target="_blank">Skyline (AACVTE)</v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
