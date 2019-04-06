@@ -30,8 +30,8 @@
       <v-card-actions>
             <v-btn flat color="arbblue" href="https://mvillage.um.city/apidocs" target="_blank">Try It</v-btn>
             <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
-            <v-btn flat color="arbblue" href="https://mvillage.um.city" target="_blank">Test Instance</v-btn>
-            <v-btn flat color="arbblue" href="https://mcity.um.city" target="_blank">Prod Instance</v-btn>
+            <v-btn flat color="arbblue" href="https://mvillage.um.city" target="_blank">Test</v-btn>
+            <v-btn flat color="arbblue" href="https://mcity.um.city" target="_blank">Prod</v-btn>
             <v-btn flat color="arbblue" href="https://skyline.um.city" target="_blank">Skyline</v-btn>
       </v-card-actions>
     </v-card>
@@ -65,6 +65,7 @@
       <v-card-actions>
             <v-btn flat color="arbblue" href="https://aacvte.octane.um.city/apidocs" target="_blank">Try It</v-btn>
             <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
+            <v-btn flat color="arbblue" href="https://aacvte.octane.um.city/" target="_blank">Prod</v-btn>
             <v-btn flat color="arbblue" href="https://aacvte.um.city" target="_blank">Skyline (AACVTE)</v-btn>
       </v-card-actions>
     </v-card>
