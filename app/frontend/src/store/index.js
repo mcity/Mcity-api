@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
-import session from 'mcity-vue-auth/dist/store/session'
+import session from '@mcity/mcity-vue-auth/dist/store/session'
 
 Vue.config.devtools = true
 Vue.use(Vuex)
@@ -19,7 +19,7 @@ export default new Vuex.Store({
   },
   mutations: {
     logError (state, err) {
-      console.log(err.response)
+      // console.log(err.response)
       state.errors.push(err.response)
     },
     updatePresentationMode (state) {

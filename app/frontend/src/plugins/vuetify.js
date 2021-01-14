@@ -35,14 +35,13 @@ import Vuetify, {
   VSwitch
 } from 'vuetify/lib'
 import { Ripple } from 'vuetify/lib/directives'
-import 'vuetify/src/stylus/app.styl'
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('font-awesome-layers', FontAwesomeLayers)
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 library.add(fas, far)
 
-Vue.use(Vuetify, {
+const opts = {
   components: {
     VApp,
     VNavigationDrawer,
@@ -78,17 +77,27 @@ Vue.use(Vuetify, {
     Ripple
   },
   theme: {
-    // Michigan colors http://med.umich.edu/branding/color.html
-    primary: '#00274C',
-    secondary: '#FFC400',
-    pop: '#575294',
-    accent: '#989c97',
-    error: '#9A3324',
-    arbblue: '#0174BB',
-    canhamblue: '#587abc',
-    lsaorange: '#cc6600',
-    hillbrown: '#7a121c',
-    rackhamgreen: '#83b2a8'
+    themes: {
+      light: {
+        // Michigan colors http://med.umich.edu/branding/color.html
+        primary: '#00274C',
+        secondary: '#FFC400',
+        pop: '#575294',
+        accent: '#989c97',
+        error: '#9A3324',
+        arbblue: '#0174BB',
+        canhamblue: '#587abc',
+        lsaorange: '#cc6600',
+        hillbrown: '#7a121c',
+        rackhamgreen: '#83b2a8'
+      }
+    }
   },
-  iconfont: 'faSvg'
-})
+  icons: {
+    iconfont: 'faSvg'
+  }
+}
+
+Vue.use(Vuetify, opts)
+
+export default new Vuetify(opts)

@@ -13,9 +13,9 @@
       </mcity-toolbar>
     </div>
 
-    <v-content>
+    <v-main>
       <v-container fluid>
-        <v-progress-circular 
+        <v-progress-circular
           v-show="isUserLoading"
           indeterminate
           class="mb-2"
@@ -34,10 +34,10 @@
           v-if="getShowIframe"
         ></auth-refresh>
       </v-container>
-    </v-content>
+    </v-main>
 
     <v-footer dark color="primary" fixed app>
-      <span>&copy; 2019 The Regents of the University of Michigan</span>
+      <span>&copy; 2020 The Regents of the University of Michigan</span>
       <v-spacer></v-spacer>
       <span class="mr-1">{{ username }} : {{ today }}</span>
     </v-footer>
@@ -45,9 +45,9 @@
 </template>
 
 <script>
-import { mapMutations, mapGetters, mapActions, mapState } from 'vuex'
-import authRefresh from 'mcity-vue-auth/src/components/RefreshAuthiFrame.vue'
-import McityToolbar from 'mcity-vue-shared/components/McityToolbar.vue'
+import { mapMutations, mapGetters, mapState } from 'vuex'
+import authRefresh from '@mcity/mcity-vue-auth/src/components/RefreshAuthiFrame.vue'
+import McityToolbar from '@mcity/mcity-vue-shared/components/McityToolbar.vue'
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
 export default {
@@ -58,19 +58,19 @@ export default {
   },
   methods: {
     ...mapMutations([
-      'logError',
+      'logError'
     ])
   },
   watch: {
     errors (val) {
       this.showRequestFailed = true
-      this.defultText = "Request Failed - If problem persists, please email mcity-engineering@umich.edu" + val[val.length - 1]
+      this.defultText = 'Request Failed - If problem persists, please email mcity-engineering@umich.edu' + val[val.length - 1]
       this.errorText = val[val.length - 1].data || this.defultText
     }
   },
   computed: {
     ...mapGetters([
-      'getShowIframe',
+      'getShowIframe'
     ]),
     ...mapState({
       getPresentMode: state => state.presentMode,
@@ -84,7 +84,7 @@ export default {
       return this.getPresentMode ? 'Private' : 'Presentation'
     },
     today () {
-      let date = new Date()
+      const date = new Date()
       return date.toISOString().slice(0, 10)
     },
     username () {
@@ -93,7 +93,7 @@ export default {
     fullname () {
       const user = this.user
       return user && user.first_name && user.last_name
-        ? `${user.first_name} ${user.last_name}` : `Firstname Lastname`
+        ? `${user.first_name} ${user.last_name}` : 'Firstname Lastname'
     }
   },
   data () {
@@ -118,7 +118,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   background-color: #f2f2f2;
 }

@@ -2,12 +2,12 @@
   <v-container>
     <v-card>
       <v-card-title class="headline primary white--text">
-        OCTANE - Facility Control
+        Mcity OS - Test Facility Control
       </v-card-title>
       <v-card-text class="text-xs-left">
         <p>
-          Mcity developed the OCTANE API to enable software control of the Mcity test facility.
-          OCTANE is a rest API with push messages through Socket.IO websockets.
+          Mcity developed the Mcity OS OCTANE API to enable software control of the Mcity test facility.
+          OCTANE is a REST API with push messages through Socket.IO websockets.
         </p>
         <p>
           Click "Try It" to access documentation and a working implementation of the API.
@@ -15,7 +15,7 @@
         </p>
         <p>
           Click "Skyline" for access to a sample application that uses the production OCTANE instance.
-          Skyline provides a web UI on top of the OCTANE API and enables point and click control and 
+          Skyline provides a web UI on top of the OCTANE API and enables point and click control and
           enumeration of the test facility. This interface is still under development.
         </p>
         <p>
@@ -28,33 +28,33 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://mvillage.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
-            <v-btn flat color="arbblue" href="https://mvillage.um.city" target="_blank">Test</v-btn>
-            <v-btn flat color="arbblue" href="https://mcity.um.city" target="_blank">Prod</v-btn>
-            <v-btn flat color="arbblue" href="https://skyline.um.city" target="_blank">Skyline</v-btn>
+            <v-btn text color="arbblue" href="https://octane.mvillage.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">Github</v-btn>
+            <v-btn text color="arbblue" href="https://octane.mvillage.um.city" target="_blank">Test</v-btn>
+            <v-btn text color="arbblue" href="https://mcity.um.city" target="_blank">Prod</v-btn>
+            <v-btn text color="arbblue" href="https://skyline.um.city" target="_blank">Skyline</v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
     <v-card>
       <v-card-title class="headline primary white--text">
-        OCTANE - Ann Arbor Connected Enviornment (AACE)
+        Mcity OS - Ann Arbor Connected Enviornment (AACE)
       </v-card-title>
       <v-card-text class="text-xs-left">
         <p>
-          Ann Arbor Connected Environment limited implementation of the OCTANE API.
+          Ann Arbor Connected Environment limited implementation of the Mcity OS OCTANE API.
           This API enables query/enumeration of the Ann Arbor Connected Environment and Socket.IO websockets for real time data feeds.
           Mcity provides an implementation of Skyline, a web user interface for real time view of AACE.
         </p>
         <p>
-          OCTANE is a rest API with push messages through Socket.IO websockets. V2X Messages are pushed to the clients in both raw and parsed formats.
+          OCTANE is a REST API with push messages through Socket.IO websockets. V2X Messages are pushed to the clients in both raw and parsed formats.
           Skyline is an interactive GUI built to run on OCTANE APIs and enable easy interaction with the API. Skyline for AACE is still under development.
         </p>
         <p>
           Click "Try It" to access documentation and a working implementation of the API.
         </p>
         <p>
-          The AACE OCTANE environment is accessible only to Leadership Circle companies and 
+          The AACE OCTANE environment is accessible only to Leadership Circle companies and
           researchers with the University of Michigan. To utilize the API directly to develop applications,
           contact mcity-engineering@umich.edu to request an application ID.
         </p>
@@ -63,10 +63,10 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://octane.aace.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">OCTANE</v-btn>
-            <v-btn flat color="arbblue" href="https://octane.aace.um.city/" target="_blank">Prod</v-btn>
-            <v-btn flat color="arbblue" href="https://skyline.aace.um.city" target="_blank">Skyline (AACE)</v-btn>
+            <v-btn text color="arbblue" href="https://octane.aace.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">Github</v-btn>
+            <v-btn text color="arbblue" href="https://octane.aace.um.city/" target="_blank">Prod</v-btn>
+            <v-btn text color="arbblue" href="https://skyline.aace.um.city" target="_blank">Skyline (AACE)</v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
@@ -86,8 +86,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://scheduling.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://scheduling.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://scheduling.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://scheduling.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
@@ -106,8 +106,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://go.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://go.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://go.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://go.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
 
@@ -127,8 +127,33 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://members.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://members.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://members.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://members.um.city" target="_blank">Production</v-btn>
+      </v-card-actions>
+    </v-card>
+
+    <p></p>
+    <v-card>
+      <v-card-title class="headline primary white--text">
+        CAN - Connected Area Network Mapping Tool
+      </v-card-title>
+      <v-card-text class="text-xs-left">
+        <p>
+          Visualize and search network host information with Mcity CAN. CAN provides users a way to discover
+          network connected devices in the world aroudn them. The webservices allow for search and enumeration
+          of devices, locations, interfaces, ip address spaces, and networks.
+
+          Mcity Members provides wiki like services supporting rendering of Markdown on the frontend.
+          Webservices allow for search, CRUD operations, and retrieval with permissions enforced by role.
+        </p>
+        <p>
+          Click "Try It" to access documentation and a working implementation of the API.
+          Contact mcity-engineering@umich.edu for a valid client_id.
+        </p>
+      </v-card-text>
+      <v-card-actions>
+            <v-btn text color="arbblue" href="https://can.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://can.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
 
@@ -150,8 +175,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://transmission.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://transmission.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://transmission.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://transmission.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
 
@@ -170,8 +195,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://garage.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://garage.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://garage.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://garage.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
 
@@ -182,7 +207,7 @@
       </v-card-title>
       <v-card-text class="text-xs-left">
         <p>
-          Mcity Project Tracking allows for query, manipulation, and creation of meta-data about 
+          Mcity Project Tracking allows for query, manipulation, and creation of meta-data about
           funded projects at Mcity. File storage on project endpoints is available through this API.
         </p>
         <p>
@@ -191,8 +216,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://projects.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://projects.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://projects.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://projects.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
 
@@ -212,8 +237,8 @@
         </p>
       </v-card-text>
       <v-card-actions>
-            <v-btn flat color="arbblue" href="https://keys.um.city/apidocs" target="_blank">Try It</v-btn>
-            <v-btn flat color="arbblue" href="https://keys.um.city" target="_blank">Production</v-btn>
+            <v-btn text color="arbblue" href="https://keys.um.city/apidocs" target="_blank">Try It</v-btn>
+            <v-btn text color="arbblue" href="https://keys.um.city" target="_blank">Production</v-btn>
       </v-card-actions>
     </v-card>
   </v-container>

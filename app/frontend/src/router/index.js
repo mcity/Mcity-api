@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import store from '../store'
 import Home from '@/components/Home'
-import AuthComponent from 'mcity-vue-auth/src/components/AuthComponent.vue'
-import { checkRequiresAuth } from 'mcity-vue-auth/dist/router/beforeEachHooks'
+import AuthComponent from '@mcity/mcity-vue-auth/src/components/AuthComponent.vue'
+import { checkRequiresAuth } from '@mcity/mcity-vue-auth/dist/router/beforeEachHooks'
 
 Vue.use(Router)
 // Enables auth on routes if VUE_APP_TESTING env var is set to false
@@ -31,7 +31,7 @@ const router = new Router({
     {
       path: '*',
       name: 'Error',
-      component: () => import('mcity-vue-shared/components/NotFound')
+      component: () => import('@mcity/mcity-vue-shared/components/NotFound')
     }
   ]
 })
