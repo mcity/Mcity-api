@@ -158,4 +158,8 @@ export default {
 .link {
   display: block;
 }
+.card-text-fix {
+  color: rgba(0, 0, 0, 0.87) !important;
+  padding-top: 16px !important;
+}
 </style>
