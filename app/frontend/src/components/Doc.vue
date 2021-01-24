@@ -32,7 +32,7 @@
             <v-btn text color="arbblue" href="https://github.com/mcity/octane-api" target="_blank">Github</v-btn>
             <v-btn text color="arbblue" href="https://octane.mvillage.um.city" target="_blank">Test</v-btn>
             <v-btn text color="arbblue" href="https://mcity.um.city" target="_blank">Prod</v-btn>
-            <v-btn flat color="arbblue" href="https://skyline.mvillage.um.city" target="_blank">Skyline (Test)</v-btn>
+            <v-btn text color="arbblue" href="https://skyline.mvillage.um.city" target="_blank">Skyline (Test)</v-btn>
             <v-btn text color="arbblue" href="https://skyline.um.city" target="_blank">Skyline</v-btn>
       </v-card-actions>
     </v-card>
