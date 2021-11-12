@@ -7,3 +7,5 @@ VUE_APP_OAUTH_SERVER=https://keys.um.city/
 VUE_APP_REDIRECT_URI=http://localhost:8080/authorized
 VUE_APP_OAUTH_SCOPE=email+roles
 VUE_APP_TESTING=false
+
+GITHUB_PACKAGES_TOKEN="Create token at https://github.com/settings/tokens"
